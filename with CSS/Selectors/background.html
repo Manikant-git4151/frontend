@@ -1,74 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>        
+    <style>
+      * {
+        padding: 25px;
+      }
+      h1.head1 {
+        color: aqua;
+      }
+      h1.head2 {
+        color: rgb(100, 237, 180);
+      }
+      #h1 {
+        color: brown;
+      }
 
-        *{
-            padding:25px
-            
-        }
-        h1.head1{
-            color: aqua;
-        }
-        h1.head2{
-            color: rgb(100, 237, 180);
-        }
-        #h1{            
-            color: brown;
-        }
+      ol li {
+        color: blueviolet;
+      }
 
+      h1:hover {
+        background-color: rgb(200, 220, 20);
+      }
 
-        ol li{
-            color: blueviolet;
-        }
+      pre::first-line {
+        color: darkcyan;
+      }
 
+      pre::after {
+        content: "na gila & na shikwa";
 
-
-        h1:hover{
-            background-color: rgb(200, 220, 20);
-        }
-
-
-        pre::first-line
-        {
-            color: darkcyan;
-        
-        }
-
-        pre::after{content:"na gila & na shikwa";
-    
         background-color: darkgreen;
-    
-        }
+      }
 
-        html{
-            background-image: url("https://cdn.mos.cms.futurecdn.net/KQhpbDwhPAWj6ocARUJ3AG.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-
-        
+      html {
+        background-image: url("https://cdn.mos.cms.futurecdn.net/KQhpbDwhPAWj6ocARUJ3AG.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     </style>
-</head>
-<body>
-    
-     <h1 class="head1" id="h1">Mani Kant R.</h1>
+  </head>
+  <body>
+    <h1 class="head1" id="h1">Mani Kant R.</h1>
 
-     <h1 class="head2" id="h2">Mani Kant R.</h1> 
+    <h1 class="head2" id="h2">Mani Kant R.</h1>
 
-     <ol style="text-align: center; list-style:inside;"> 
-        fruits : find odd one out
-        <ol>
-            <li>Apple</li>
-            <li type="a">chicken</li>
-            <li type="A">bannana</li>
-            <li type="i">blueberry</li>
-        </ol>
-    </ol> 
+    <ol style="text-align: center; list-style: inside">
+      fruits : find odd one out
+      <ol>
+        <li>Apple</li>
+        <li type="a">chicken</li>
+        <li type="A">bannana</li>
+        <li type="i">blueberry</li>
+      </ol>
+    </ol>
 
     <pre>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus earum, esse optio autem ullam dolor ratione sequi, dolore, nisi exercitationem vel minus. Aliquid dicta ullam cupiditate cum exercitationem eius pariatur, accusamus repudiandae.
@@ -79,7 +67,5 @@
         chala jata hun kisiki dhun me
         dhandkte dilke sahrane leye
     </pre>
-       
-    
-</body>
-</html>    
+  </body>
+</html>
