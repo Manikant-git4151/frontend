@@ -1,95 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Layout</title>
+  <title>CSS Transition Button</title>
   <style>
-    * { box-sizing: border-box; }
-
     body {
+      text-align: center;
+      margin-top: 100px;
       font-family: Arial;
-      margin: 0;
     }
 
-    header, nav, main, aside, footer {
-      padding: 10px;
-      border: 1px solid #ccc;
+    button {
+      background-color: blue;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+
+
+      transition: all 0.3s;
     }
 
-    header { background: #eee; }
-    footer { background: #eee; text-align: center; }
-
- 
-    nav {
-      display: flex;
-      gap: 10px;
-      background: #ddd;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: black;
-    }
-
-   
-    .container {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 10px;
-      padding: 10px;
-    }
-
-    main { background: #fafafa; }
-    aside { background: #f0f0f0; }
-
-   
-    @media (max-width: 900px) {
-      .container {
-        grid-template-columns: 2fr 1fr;
-      }
-    }
+    button:hover {
+      background-color: red;
 
 
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-
-      .container {
-        grid-template-columns: 1fr;
-      }
+      transform: scale(1.1);
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>My Website</h1>
-</header>
-
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-</nav>
-
-<div class="container">
-  <main>
-    <h2>Content</h2>
-    <p>This is the main content area.</p>
-    <p>It uses CSS Grid for layout.</p>
-  </main>
-
-  <aside>
-    <h2>Sidebar</h2>
-    <p>Some extra links or info.</p>
-  </aside>
-</div>
-
-<footer>
-  <p>Footer</p>
-</footer>
+  <button>Click Me</button>
 
 </body>
+
 </html>
